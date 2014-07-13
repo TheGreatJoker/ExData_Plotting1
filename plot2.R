@@ -11,7 +11,7 @@ readData <- function(filePath = "household_power_consumption.txt", skipN = 66636
 }
 
 ## This function draws the plot and save it to a png file 
-## called plot1.png in the working dicrectory.
+## called plot2.png in the working dicrectory.
 plotToFile <- function(data) {
     png(file = "plot2.png", width = 480, height = 480)
     plot(data$Global_active_power, type="l" , xaxt='n', 
